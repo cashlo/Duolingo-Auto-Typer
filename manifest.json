@@ -1,0 +1,18 @@
+{
+  "name": "Duolingo Auto Typer",
+  "version": "1.0",
+  "description": "This extensions type translation task automatically for you on Duolingo!",
+  "content_scripts": [
+   {
+     "matches": ["*://*.duolingo.com/skill*","*://*.duolingo.com/practice*"],
+     "js": ["contentScript.js"]
+   }
+  ],
+  "page_action": {
+    "default_icon": {
+        "16": "images/robot-hand.png",
+        "32": "images/robot-hand.png"
+      }
+    },
+  "manifest_version": 2
+}
